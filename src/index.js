@@ -6,6 +6,7 @@ import calc from './modules/calc';
 import sliderSwiper from './modules/sliderSwiper';
 import tabs from './modules/tabs';
 import slider from './modules/slider';
+import flatCalc from './modules/flatCalc';
 import sendForm from './modules/sendForm';
 
 timer('14 november 2021');
@@ -16,6 +17,7 @@ calc();
 sliderSwiper();
 tabs();
 slider();
+flatCalc();
 sendForm({
    formId: 'form1',
    someElem: [
