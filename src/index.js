@@ -17,7 +17,7 @@ calc();
 sliderSwiper();
 tabs();
 slider();
-flatCalc();
+flatCalc(100);
 sendForm({
    formId: 'form1',
    someElem: [
