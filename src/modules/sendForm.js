@@ -36,4 +36,4 @@ const sendForm = ({ formId, someElem = [] }) => {
    });
 };
 
-export default sendForm;
+//export default sendForm;

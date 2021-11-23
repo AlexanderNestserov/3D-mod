@@ -7,7 +7,8 @@ import sliderSwiper from './modules/sliderSwiper';
 import tabs from './modules/tabs';
 import slider from './modules/slider';
 import flatCalc from './modules/flatCalc';
-import sendForm from './modules/sendForm';
+import ajax from './modules/ajax';
+//import sendForm from './modules/sendForm';
 
 timer('14 november 2021');
 menu();
@@ -18,12 +19,13 @@ sliderSwiper();
 tabs();
 slider();
 flatCalc(100);
-sendForm({
-   formId: 'form1',
-   someElem: [
-      {
-         type: 'block',
-         id: 'total'
-      }
-   ],
-});
+ajax();
+//sendForm({
+ //  formId: 'form1',
+//   someElem: [
+   //   {
+   //      type: 'block',
+   //      id: 'total'
+  //    }
+//   ],
+//});
