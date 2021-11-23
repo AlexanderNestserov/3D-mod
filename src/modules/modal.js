@@ -20,6 +20,9 @@ const modal = () => {
             }
          });
       }
+      else {
+         modal.style.display = "block";
+      }
    }));
 
    modal.addEventListener('click', (e) => {
