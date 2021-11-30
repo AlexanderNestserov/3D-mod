@@ -9,6 +9,14 @@ const slider = () => {
    let currentSlide = 0;
    let interval;
 
+   dots.forEach(block => block.remove());
+
+   let uList = document.querySelector('.portfolio-dots');
+   let listElement = document.createElement('li');
+   listElement.classList = 'dot';
+
+
+
    const prevSlide = (elems, index, strClass) => {
       elems[index].classList.remove(strClass);
    };
@@ -47,6 +55,7 @@ const slider = () => {
       prevSlide(dots, currentSlide, 'dot-active');
       if (e.target.matches('#arrow-right')) {
          currentSlide++;
+         uList.appendChild(listElement);
       } else if (e.target.matches('#arrow-left')) {
          currentSlide--;
       } else if (e.target.classList.contains('dot')) {
@@ -81,30 +90,30 @@ const slider = () => {
       }
    }, true);
 
-   /*  dots.forEach(block => block.remove());
-  
-     const uList = document.querySelector('.portfolio-dots');
-     let arr = [];
-     let listElement = document.createElement('li');
-     listElement.classList = 'dot';
-     for (let i = 0; i < portfolioItems.length; i++) {
-        //arr = arr[i];
-        arr.push(listElement);
-        //let b = listElement.classList.add('dot')[i];
-        //   arr.unshift(listElement.classList.add('dot')[i]);
-        //  arr[i] = listElement.classList.add('dot');
-        console.log(arr);
-        uList.prepend(arr);
-  
-     }
-     //console.log(arr);
-  
-     //listElement.classList.add('dot');
-     //arr.push(listElement);
-  
-  
-  
-  */
+
+
+   // let uList = document.querySelector('.portfolio-dots');
+   //  let arr = [];
+   // let listElement = document.createElement('li').classList = 'dot';
+   //listElement.classList = 'dot';
+   //for (let i = 0; i < portfolioItems.length; i++) {
+   //arr = arr[i];
+   //  arr.push(listElement);
+   //let b = listElement.classList.add('dot')[i];
+   //   arr.unshift(listElement.classList.add('dot')[i]);
+   //  arr[i] = listElement.classList.add('dot');
+   // console.log(arr);
+   //  uList.prepend(arr);
+
+   // }
+   //console.log(arr);
+
+   //listElement.classList.add('dot');
+   //arr.push(listElement);
+
+
+
+
 };
 
 export default slider;
