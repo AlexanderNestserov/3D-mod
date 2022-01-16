@@ -9,7 +9,7 @@ import slider from './modules/slider';
 import flatCalc from './modules/flatCalc';
 import sendForm from './modules/sendForm';
 
-timer('14 november 2021');
+timer("20 november 2022");
 menu();
 modal();
 form();

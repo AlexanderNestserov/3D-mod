@@ -3,7 +3,6 @@ const slider = () => {
    const portfolioItems = document.querySelectorAll('.portfolio-item');
    const dots = document.querySelectorAll('.dot');
 
-
    const timeInterval = 2000;
 
    let currentSlide = 0;
@@ -14,8 +13,6 @@ const slider = () => {
    let uList = document.querySelector('.portfolio-dots');
    let listElement = document.createElement('li');
    listElement.classList = 'dot';
-
-
 
    const prevSlide = (elems, index, strClass) => {
       elems[index].classList.remove(strClass);

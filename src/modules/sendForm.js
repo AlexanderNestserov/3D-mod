@@ -50,7 +50,6 @@ const sendForm = ({ formId, someElem = [] }) => {
                   formElements.forEach(input => {
                      input.value = '';
                   });
-
                })
                .catch(error => {
                   statusBlock.textContent = errorText;
@@ -61,9 +60,7 @@ const sendForm = ({ formId, someElem = [] }) => {
       });
    };
 
-
    try {
-
       if (!form) {
          throw new Error('Put your form on the table');
       }
