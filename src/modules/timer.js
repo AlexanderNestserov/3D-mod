@@ -6,6 +6,7 @@ const timer = (deadline) => {
    const getTimeRemaining = () => {
 
       let dateStop = new Date(deadline).getTime();
+      console.log(dateStop);
       let dateNow = new Date().getTime();
 
       let timeRemaining = (dateStop - dateNow) / 1000;
